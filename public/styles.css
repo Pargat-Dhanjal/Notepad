@@ -5,25 +5,22 @@
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  background: #eee;
-  padding: 0 16px;
+  background: #202124;
 }
 
 header {
   background-color: #f5ba13;
-  margin: auto -16px;
-  padding: 16px 32px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 1rem;
 }
 
 header h1 {
-  color: #fff;
-  font-family: "McLaren", cursive;
-  font-weight: 200;
+  color: #202124;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 footer {
@@ -35,26 +32,35 @@ footer {
 }
 
 footer p {
-  color: #ccc;
+  color: whitesmoke;
+}
+
+footer a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+footer a:hover{
+  color: yellow;
 }
 
 .note {
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
-  width: 240px;
+  background: #202124;
+  color: whitesmoke;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 15rem;
   margin: 16px;
   float: left;
 }
 
 .note h1 {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   margin-bottom: 6px;
 }
 
 .note p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -62,6 +68,7 @@ footer p {
 
 .note button {
   position: relative;
+  background: transparent;
   float: right;
   margin-right: 10px;
   color: #f5ba13;
@@ -76,14 +83,16 @@ form.create-note {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
-  background: #fff;
+  background: #202124;
   padding: 15px;
-  border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  border: 1px solid gray;
+  border-radius: 0.5rem;
 }
 
 form.create-note input,
 form.create-note textarea {
+  background-color: #202124;
+  color: whitesmoke;
   width: 100%;
   border: none;
   padding: 4px;
@@ -93,17 +102,18 @@ form.create-note textarea {
   resize: none;
 }
 
+
 form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
   background: #f5ba13;
-  color: #fff;
+  color: #202124;
   border: none;
-  border-radius: 50%;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
   width: 36px;
   height: 36px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
 }

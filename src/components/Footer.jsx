@@ -1,11 +1,9 @@
 import React from "react";
 
-const currentYear = new Date().getFullYear();
-
 function Footer(){
     return (
         <footer>
-            <p>Copyright © {currentYear}</p>
+            <p>Made with ❤️ by <a href="https://github.com/Pargat-Dhanjal" target="_blank" rel="noreferrer">Pargat Singh</a> </p>
         </footer>
     );
 }
