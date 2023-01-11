@@ -12,13 +12,19 @@ function App() {
     setNotes([...notes]);
   }
 
+  function deleteNote (id) {
+    notes.splice(id,1)
+    setNotes([...notes]);
+  }
+
+
   return (
     <div>
       <Header />
       <CreateArea add={addNote} />
       {notes.map((note, index) => {
         return (
-          <Notes key={index} heading={note.title} content={note.content} />
+          <Notes key={index} heading={note.title} content={note.content} delete={deleteNote} id={index} />
         );
       })}
       <Footer />

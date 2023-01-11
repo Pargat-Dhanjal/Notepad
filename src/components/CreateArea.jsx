@@ -7,10 +7,11 @@ function CreateArea(props) {
   });
 
   function handelChange(event) {
+    var {name,value}=event.target
     setNote((prev) => {
       return {
         ...prev,
-        [event.target.name]: event.target.value,
+        [name]: value,
       };
     });
   }
