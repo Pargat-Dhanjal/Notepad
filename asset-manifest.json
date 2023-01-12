@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Notepad/static/js/main.27c89caf.js",
+    "main.js": "/Notepad/static/js/main.a4e150db.js",
     "index.html": "/Notepad/index.html",
-    "main.27c89caf.js.map": "/Notepad/static/js/main.27c89caf.js.map"
+    "main.a4e150db.js.map": "/Notepad/static/js/main.a4e150db.js.map"
   },
   "entrypoints": [
-    "static/js/main.27c89caf.js"
+    "static/js/main.a4e150db.js"
   ]
 }
