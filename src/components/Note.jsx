@@ -8,7 +8,7 @@ function Note(props) {
       <p>{props.content}</p>
       <button onClick={()=> {
         props.delete(props.id);
-      }}><DeleteIcon /></button>
+      }}><DeleteIcon className="icons" /></button>
     </div>
   );
 }
