@@ -126,19 +126,19 @@ form.create-note button {
 
 @media only screen and (max-width: 500px) {
 
-.note {
-  width: 40%;
-}
+  .note {
+    width: 40%;
+  }
 
-.note button {
-  padding: 1rem;
-}
+  .note button {
+    padding: 1rem;
+  }
 
-.icons {
-  transform: scale(1.1);
-}
+  .icons {
+    transform: scale(1.1);
+  }
 
-form.create-note {
-  width: 95%;
-}
+  form.create-note {
+    width: 95%;
+  }
 }
