@@ -4,11 +4,11 @@ import Notes from "./Note";
 import Footer from "./Footer";
 import CreateArea from "./CreateArea";
 
-function getNotes(){
+function getNotes() {
   var notes = localStorage.getItem("notes");
-  if(notes){
+  if (notes) {
     return JSON.parse(notes);
-  }else{
+  } else {
     return [];
   }
 }
@@ -21,12 +21,12 @@ function App() {
     setNotes([...notes]);
   }
 
-  function deleteNote (id) {
-    notes.splice(id,1)
+  function deleteNote(id) {
+    notes.splice(id, 1);
     setNotes([...notes]);
   }
 
-useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
 
@@ -36,7 +36,13 @@ useEffect(() => {
       <CreateArea add={addNote} />
       {notes.map((note, index) => {
         return (
-          <Notes key={index} heading={note.title} content={note.content} delete={deleteNote} id={index} />
+          <Notes
+            key={index}
+            heading={note.title}
+            content={note.content}
+            delete={deleteNote}
+            id={index}
+          />
         );
       })}
       <Footer />

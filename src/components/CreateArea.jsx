@@ -9,11 +9,11 @@ function CreateArea(props) {
     content: "",
   });
 
-  var [focus,setFocus]=useState(false)
+  var [focus, setFocus] = useState(false);
 
   function handelChange(event) {
     var { name, value } = event.target;
-    setFocus(true)
+    setFocus(true);
     setNote((prev) => {
       return {
         ...prev,
@@ -25,16 +25,18 @@ function CreateArea(props) {
   return (
     <div>
       <form className="create-note">
-        {focus && <input
-          name="title"
-          placeholder="Title"
-          value={note.title}
-          onChange={handelChange}
-        />}
+        {focus && (
+          <input
+            name="title"
+            placeholder="Title"
+            value={note.title}
+            onChange={handelChange}
+          />
+        )}
         <textarea
           name="content"
           placeholder="Write a note..."
-          rows={focus?3:1}
+          rows={focus ? 3 : 1}
           value={note.content}
           onChange={handelChange}
         />
@@ -46,7 +48,7 @@ function CreateArea(props) {
                 title: "",
                 content: "",
               });
-              setFocus(false)
+              setFocus(false);
               event.preventDefault();
             }}
           >
