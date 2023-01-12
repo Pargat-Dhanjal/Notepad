@@ -50,7 +50,7 @@ function CreateArea(props) {
               event.preventDefault();
             }}
           >
-            <AddIcon />
+            <AddIcon className="icons" />
           </Fab>
         </Zoom>
       </form>
