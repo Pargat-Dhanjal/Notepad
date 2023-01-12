@@ -24,23 +24,25 @@ header h1 {
 }
 
 footer {
-  position: absolute;
-  text-align: center;
+  position: fixed;
+  font-weight: 500;
+  left: 0;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  background-color: #f5ba13;
+  color: #202124;
+  text-align: center;
+  padding: 0.2rem;
 }
 
-footer p {
-  color: whitesmoke;
-}
 
 footer a{
-  color: whitesmoke;
+  color: #202124;
   text-decoration: none;
 }
+
 footer a:hover{
-  color: yellow;
+  color: white;
 }
 
 .note {
@@ -49,14 +51,16 @@ footer a:hover{
   border: 1px solid gray;
   border-radius: 0.5rem;
   padding: 2rem;
-  width: 15rem;
+  width: 13rem;
   margin: 16px;
   float: left;
 }
 
 .note h1 {
   font-size: 1.2rem;
-  margin-bottom: 6px;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .note p {
