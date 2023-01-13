@@ -17,7 +17,7 @@ function App() {
   var [notes, setNotes] = useState(getNotes());
 
   function addNote(note) {
-    notes.push(note);
+    if (!(note.title === "" && note.content === "")) notes.push(note);
     setNotes([...notes]);
   }
 
