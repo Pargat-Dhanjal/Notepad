@@ -31,6 +31,17 @@ function CreateArea(props) {
             placeholder="Title"
             value={note.title}
             onChange={handelChange}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                event.preventDefault();
+                props.add(note);
+                setNote({
+                  title: "",
+                  content: "",
+                });
+                setFocus(false);
+              }
+            }}
           />
         )}
         <textarea
@@ -43,13 +54,13 @@ function CreateArea(props) {
         <Zoom in={focus}>
           <Fab
             onClick={(event) => {
+              event.preventDefault();
               props.add(note);
               setNote({
                 title: "",
                 content: "",
               });
               setFocus(false);
-              event.preventDefault();
             }}
           >
             <AddIcon className="icons" />
